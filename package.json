@@ -1,5 +1,12 @@
 {
   "name": "wigpi_front",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/wigpi/frontend-service"
+  },
+  "engines": {
+    "node": ">=20"
+  },
   "private": true,
   "type": "module",
   "scripts": {
