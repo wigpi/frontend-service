@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"nuxtr.nuxtr-vscode",
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"rvest.vs-code-prettier-eslint",
+		"vue.volar",
+		"sdras.vue-vscode-snippets"
+	]
+}

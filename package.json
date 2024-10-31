@@ -1,18 +1,37 @@
 {
-  "name": "nuxt-app",
+  "name": "wigpi_front",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint . --fix",
+    "prettier": "npx prettier . --check",
+    "prettier:fix": "npx prettier . --write"
   },
   "dependencies": {
-    "@nuxt/ui-pro": "^1.4.3",
-    "nuxt": "^3.13.0",
+    "@nuxt/fonts": "^0.10.2",
+    "@nuxtjs/i18n": "^8.5.5",
+    "@primevue/themes": "^4.1.1",
+    "nuxt": "^3.13.2",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.1.1",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@nuxt/eslint": "^0.6.1",
+    "@primevue/nuxt-module": "^4.1.1",
+    "eslint": "^9.13.0",
+    "eslint-plugin-vue": "^9.30.0",
+    "globals": "^15.11.0",
+    "prettier": "3.3.3",
+    "sass-embedded": "^1.80.5",
+    "typescript-eslint": "^8.12.2"
   }
 }
