@@ -3,6 +3,7 @@ import Aura from "@primevue/themes/aura";
 // eslint-disable-next-line no-undef
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
+
   modules: [
     "@primevue/nuxt-module",
     "@nuxt/eslint",
@@ -15,6 +16,9 @@ export default defineNuxtConfig({
     "~/node_modules/primeflex/primeflex.css",
   ],
   primevue: {
+    importTheme: {
+      from: "@/src/design/theme.js",
+    },
     options: {
       theme: {
         preset: Aura,

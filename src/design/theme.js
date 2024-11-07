@@ -1,7 +1,7 @@
 import { definePreset } from "@primevue/themes";
 import Aura from "@primevue/themes/aura";
 
-const MyPreset = definePreset(Aura, {
+const wigpiTheme = definePreset(Aura, {
   semantic: {
     primary: {
       50: "{indigo.50}",
@@ -20,7 +20,7 @@ const MyPreset = definePreset(Aura, {
 });
 
 export default {
-  preset: MyPreset,
+  preset: wigpiTheme,
   options: {
     darkModeSelector: ".p-dark",
   },
