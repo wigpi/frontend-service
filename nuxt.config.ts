@@ -10,7 +10,10 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
   ],
 
-  css: ["~/assets/scss/main.scss"],
+  css: [
+    "~/assets/scss/main.scss",
+    "~/node_modules/primeflex/primeflex.css",
+  ],
   primevue: {
     options: {
       theme: {
