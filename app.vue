@@ -1,12 +1,12 @@
 <template>
   <Toast />
-  <Navbar />
+  <NavbarComponent />
 
   <NuxtPage />
 </template>
 
 <script setup lang="ts">
-import Navbar from "./src/components/Navbar.vue";
+import NavbarComponent from "./src/components/NavbarComponent.vue";
 </script>
 
 <style>
