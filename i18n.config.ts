@@ -9,6 +9,8 @@ export default defineI18nConfig(() => ({
 
       changeUserSettings: "User changes",
 
+      dashboardWelcome: "Welcome %username% ! 👋🏼",
+
       home: "Home",
       profile: "Profile",
 
@@ -22,6 +24,8 @@ export default defineI18nConfig(() => ({
       switchLocale: "Vous avez changé la langue pour français.",
 
       changeUserSettings: "Changement utilisateur",
+
+      dashboardWelcome: "Bienvenue %username% ! 👋🏼",
 
       home: "Accueil",
       profile: "Profil",
