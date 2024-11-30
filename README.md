@@ -1,75 +1,42 @@
-# Nuxt 3 Minimal Starter
+# WIGPI front backoffice
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 📚 Ressources
 
-## Setup
+- [PrimeVue Documentation](https://primevue.org/)
+- [Nuxt Documentation](https://nuxt.com/docs)
 
-Make sure to install the dependencies:
+### Nuxt Modules
+
+- [@nuxt/fonts](https://nuxt.com/modules/fonts)
+- [@nuxt/i18n](https://nuxt.com/modules/i18n)
+- [@nuxt/eslint](https://nuxt.com/modules/eslint)
+
+## 🏗️ Setup
+
+Make sure to install dependencies:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## 🖥️ Development Server
 
-Start the development server on `http://localhost:3000`:
+Start the development server on `http://localhost:8080`:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## ✨ Production
 
 Build the application for production:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
