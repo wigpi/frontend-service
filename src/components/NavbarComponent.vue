@@ -17,11 +17,17 @@
     </template>
     <template #end>
       <div class="flex items-center gap-2">
-        <Avatar image="https://i.pravatar.cc/48" shape="circle" />
+        <Button
+          :icon="darkMode ? 'pi pi-sun' : 'pi pi-moon'"
+          variant="text"
+          severity="secondary"
+          :aria-label="$t('ariaLabels.darkMode')"
+          @click="toggleDarkMode()"
+        />
+        <Avatar image="https://i.pravatar.cc/48" shape="circle" class="mt-1" />
       </div>
     </template>
   </Menubar>
-  {{locale}}
 </template>
 
 <script lang="ts" setup>
@@ -40,6 +46,14 @@ availableLocales.forEach((i) => {
     },
   });
 });
+
+let darkMode = false;
+function toggleDarkMode() {
+  document.documentElement.classList.toggle("p-dark");
+  darkMode = document.documentElement.classList.contains("p-dark");
+
+  console.log(darkMode);
+}
 
 function switchLocale(locale: string) {
   setLocale(locale);

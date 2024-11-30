@@ -16,17 +16,6 @@ const toast = useToast();
 useHead({
   title: "Accueil",
 });
-
-function toggleDarkMode() {
-  document.documentElement.classList.toggle('p-dark');
-
-  toast.add({
-    severity: "info",
-    summary: getLocaleMessage(locale).changeUserSettings,
-    detail: `${getLocaleMessage(locale).switchLocale}`,
-    life: 3000,
-  });
-}
 </script>
 
 

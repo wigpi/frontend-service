@@ -11,6 +11,10 @@ export default defineI18nConfig(() => ({
 
       home: "Home",
       profile: "Profile",
+
+      ariaLabels: {
+        darkMode: "Activate dark mode",
+      },
     },
     fr: {
       language: "Langue",
@@ -21,6 +25,10 @@ export default defineI18nConfig(() => ({
 
       home: "Accueil",
       profile: "Profil",
+
+      ariaLabels: {
+        darkMode: "Activate dark mode",
+      },
     },
   },
 }));
