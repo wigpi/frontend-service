@@ -1,19 +1,15 @@
 <template>
   <Menubar :model="items">
     <template #start>
-      <div class="my-auto">
+      <div class="mt-1">
         <Image src="./wigpi_logo.png" height="40" />
       </div>
-      <h2 class="ml-2 my-0 title">WIGPI</h2>
+      <h2 class="mx-2 my-auto title">WIGPI</h2>
     </template>
     <template #item="{ item, props, hasSubmenu, root }">
       <a v-ripple class="flex items-center" v-bind="props.action">
         <i v-if="item.icon" :class="item.icon"></i>
         <span>{{ item.label }}</span>
-
-        <!-- for lang check -->
-         {{item.label}}
-        <i v-if="item.label" class="ml-auto"></i>
 
         <Badge v-if="item.badge" :class="{ 'ml-auto': !root}" :value="item.badge" />
         <i v-if="hasSubmenu" :class="['pi pi-angle-down ml-auto', { 'pi-angle-down': root, 'pi-angle-right': !root }]"></i>
@@ -21,8 +17,7 @@
     </template>
     <template #end>
       <div class="flex items-center gap-2">
-        <InputText placeholder="Search" type="text" class="w-32 sm:w-auto" />
-        <Avatar image="/images/avatar/amyelsner.png" shape="circle" />
+        <Avatar image="https://i.pravatar.cc/48" shape="circle" />
       </div>
     </template>
   </Menubar>
@@ -59,7 +54,7 @@ function switchLocale(locale: string) {
 
 const items = [
   {
-    label: "Home",
+    label: t("home"),
     icon: "pi pi-home",
     command: () => {
       router.push("/");
@@ -71,27 +66,8 @@ const items = [
     items: localesItems,
   },
   {
-    label: "Projects",
-    icon: "pi pi-search",
-    badge: 3,
-    items: [
-      {
-        label: "Core",
-        icon: "pi pi-bolt",
-        badge: 4,
-      },
-      {
-        label: "Blocks",
-        icon: "pi pi-server",
-      },
-      {
-        separator: true,
-      },
-      {
-        label: "UI Kit",
-        icon: "pi pi-pencil",
-      },
-    ],
+    label: t("profile"),
+    icon: "pi pi-user",
   },
 ];
 </script>
