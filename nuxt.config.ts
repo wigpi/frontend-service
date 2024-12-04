@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxtjs/i18n",
     "nuxt-security",
+    "@nuxtjs/web-vitals",
   ],
 
   css: [
