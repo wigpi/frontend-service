@@ -11,12 +11,14 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "nuxt-security",
     "@nuxtjs/web-vitals",
+    "@sentry/nuxt/module",
   ],
 
   css: [
     "~/assets/scss/main.scss",
     "~/node_modules/primeflex/primeflex.css",
   ],
+
   primevue: {
     importTheme: {
       from: "@/src/design/theme.js",
@@ -56,4 +58,15 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: true },
+
+  sentry: {
+    sourceMapsUploadOptions: {
+      org: "stanislasbdx",
+      project: "wigpi_front",
+    },
+  },
+
+  sourcemap: {
+    client: "hidden",
+  },
 });
