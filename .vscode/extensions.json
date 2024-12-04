@@ -5,6 +5,7 @@
 		"dbaeumer.vscode-eslint",
 		"rvest.vs-code-prettier-eslint",
 		"vue.volar",
-		"sdras.vue-vscode-snippets"
+		"sdras.vue-vscode-snippets",
+		"github.vscode-github-actions"
 	]
 }
