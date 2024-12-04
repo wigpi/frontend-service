@@ -62,7 +62,7 @@ export default defineNuxtConfig({
   sentry: {
     sourceMapsUploadOptions: {
       org: "stanislasbdx",
-      project: "wigpi_front",
+      project: "wigpi-front",
     },
   },
 
